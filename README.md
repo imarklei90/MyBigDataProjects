@@ -1,2 +1,4 @@
 # MyBigDataProjects
-Initial Commit
+- Hadoop
+- Zookeeper
+- Hive
