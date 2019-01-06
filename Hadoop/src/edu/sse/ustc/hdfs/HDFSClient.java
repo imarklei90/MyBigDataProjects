@@ -5,10 +5,8 @@ import org.apache.hadoop.fs.*;
 import org.apache.hadoop.io.IOUtils;
 import org.junit.Test;
 
-import javax.ws.rs.DELETE;
 import java.io.File;
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.net.URI;
 import java.net.URISyntaxException;
