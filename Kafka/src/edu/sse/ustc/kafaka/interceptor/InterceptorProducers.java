@@ -43,12 +43,14 @@ public class InterceptorProducers {
 
         String topic = "firstTopic";
         // 4. 发送消息
-        producer.send(new ProducerRecord<>(topic, "message" + i), new Callback() {
-            @Override
-            public void onCompletion(RecordMetadata recordMetadata, Exception e) {
-                
-            }
-        })
+        for (int i = 0; i < 10; i++) {
+            producer.send(new ProducerRecord<>(topic, "message" + i), new Callback() {
+                @Override
+                public void onCompletion(RecordMetadata recordMetadata, Exception e) {
+
+                }
+            });
+        }
 
         // 5. 关闭资源
     }
