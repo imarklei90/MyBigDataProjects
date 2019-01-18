@@ -2,4 +2,5 @@
 - Hadoop
 - Zookeeper
 - Hive
+- Kafka
     

@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Hadoop/Hadoop.iml" filepath="$PROJECT_DIR$/Hadoop/Hadoop.iml" />
       <module fileurl="file://$PROJECT_DIR$/Hive/Hive.iml" filepath="$PROJECT_DIR$/Hive/Hive.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Kafka/Kafka.iml" filepath="$PROJECT_DIR$/Kafka/Kafka.iml" />
       <module fileurl="file://$PROJECT_DIR$/Zookeeper/Zookeeper.iml" filepath="$PROJECT_DIR$/Zookeeper/Zookeeper.iml" />
     </modules>
   </component>
