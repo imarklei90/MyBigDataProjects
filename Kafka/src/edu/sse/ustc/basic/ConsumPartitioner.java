@@ -1,4 +1,4 @@
-package edu.sse.ustc.kafka;
+package edu.sse.ustc.basic;
 
 import org.apache.kafka.clients.producer.Partitioner;
 import org.apache.kafka.common.Cluster;

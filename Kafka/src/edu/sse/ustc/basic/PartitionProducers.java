@@ -1,9 +1,7 @@
-package edu.sse.ustc.kafka;
+package edu.sse.ustc.basic;
 
-import org.apache.kafka.clients.producer.Callback;
 import org.apache.kafka.clients.producer.KafkaProducer;
 import org.apache.kafka.clients.producer.ProducerRecord;
-import org.apache.kafka.clients.producer.RecordMetadata;
 
 import java.util.Properties;
 
@@ -32,7 +30,7 @@ public class PartitionProducers {
         // 配置Value的序列化
         properties.put("value.serializer", "org.apache.kafka.common.serialization.StringSerializer");
         // 添加自定义分区
-        properties.put("partitioner.class", "edu.sse.ustc.kafka.ConsumPartitioner");
+        properties.put("partitioner.class", "edu.sse.ustc.basic.ConsumPartitioner");
 
         // 2. 定义Kafka生产者
         KafkaProducer<String, String> producer = new KafkaProducer<String, String>(properties);
