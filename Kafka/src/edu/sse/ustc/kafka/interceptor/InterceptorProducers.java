@@ -1,4 +1,4 @@
-package edu.sse.ustc.interceptor;
+package edu.sse.ustc.kafka.interceptor;
 
 import org.apache.kafka.clients.producer.*;
 
@@ -34,7 +34,7 @@ public class InterceptorProducers {
         // 2. 构建拦截器链
         List<String> interceptors = new ArrayList<>();
         interceptors.add("TimeInterceptor");
-        interceptors.add("edu.sse.ustc.basic.interceptor.CounterInterceptor");
+        interceptors.add("edu.sse.ustc.kafka.basic.interceptor.CounterInterceptor");
 
         properties.put(ProducerConfig.INTERCEPTOR_CLASSES_CONFIG, interceptors);
 

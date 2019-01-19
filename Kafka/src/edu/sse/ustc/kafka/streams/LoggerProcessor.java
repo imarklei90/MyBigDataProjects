@@ -1,4 +1,4 @@
-package edu.sse.ustc.streams;
+package edu.sse.ustc.kafka.streams;
 
 import org.apache.kafka.streams.processor.Processor;
 import org.apache.kafka.streams.processor.ProcessorContext;

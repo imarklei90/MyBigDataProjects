@@ -1,4 +1,4 @@
-package edu.sse.ustc.basic;
+package edu.sse.ustc.kafka.basic;
 
 import org.apache.kafka.clients.consumer.ConsumerRecord;
 import org.apache.kafka.clients.consumer.ConsumerRecords;

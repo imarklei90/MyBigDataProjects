@@ -1,4 +1,4 @@
-package edu.sse.ustc.interceptor;
+package edu.sse.ustc.kafka.interceptor;
 
 import org.apache.kafka.clients.producer.ProducerInterceptor;
 import org.apache.kafka.clients.producer.ProducerRecord;
@@ -41,6 +41,8 @@ public class CounterInerceptor implements ProducerInterceptor<String, String> {
     @Override
     public void close() {
         // 最终统计输出
+        System.out.println("发送成功：" + successCounter);
+        System.out.println("发送失败：" + failedCounter);
     }
 
 
