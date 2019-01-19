@@ -1,4 +1,4 @@
-package edu.sse.ustc.kafka.interceptor;
+package edu.sse.ustc.interceptor;
 
 import org.apache.kafka.clients.producer.*;
 
