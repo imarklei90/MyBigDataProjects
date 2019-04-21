@@ -6,11 +6,13 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="Elasticsearch" />
         <module name="HBase" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="HBase" target="1.5" />
+      <module name="Elasticsearch" target="1.7" />
+      <module name="HBase" target="1.7" />
     </bytecodeTargetLevel>
   </component>
 </project>
