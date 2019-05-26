@@ -5,7 +5,15 @@
       <list>
         <option value="$PROJECT_DIR$/HBase/pom.xml" />
         <option value="$PROJECT_DIR$/Elasticsearch/pom.xml" />
+        <option value="$PROJECT_DIR$/../SparkProjects/scala/pom.xml" />
       </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/../SparkProjects/scala/AkkaSystem/pom.xml" />
+        <option value="$PROJECT_DIR$/../SparkProjects/scala/Practice/pom.xml" />
+        <option value="$PROJECT_DIR$/../SparkProjects/scala/pom.xml" />
+      </set>
     </option>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
