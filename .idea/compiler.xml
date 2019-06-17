@@ -9,11 +9,13 @@
         <module name="HBase" />
         <module name="HelloWorld" />
         <module name="Scala" />
+        <module name="Flink" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="AkkaSystem" target="1.8" />
       <module name="Elasticsearch" target="1.7" />
+      <module name="Flink" target="1.8" />
       <module name="HBase" target="1.7" />
       <module name="HelloWorld" target="1.8" />
       <module name="Practice" target="1.8" />
