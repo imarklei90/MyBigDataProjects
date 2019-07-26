@@ -25,7 +25,7 @@ public class JavaCRUD4MongoDB {
 	@Before
 	public void getDBConnection() { // 获取连接
 		// 连接 MongoDB
-		MongoClient client = new MongoClient("192.168.188.69", 27017);
+		MongoClient client = new MongoClient("172.20.10.10", 27017);
 
 		// 获取数据库
 		MongoDatabase studentDB = client.getDatabase("test");
