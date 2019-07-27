@@ -1,4 +1,4 @@
-package edu.sse.ustc.elasticsearch.zk;
+package edu.sse.ustc.zk;
 
 import org.apache.zookeeper.*;
 
