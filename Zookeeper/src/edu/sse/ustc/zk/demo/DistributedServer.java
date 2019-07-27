@@ -1,4 +1,4 @@
-package edu.sse.ustc.zk.edu.sse.ustc.zk.demo;
+package edu.sse.ustc.zk.demo;
 
 import org.apache.zookeeper.*;
 
