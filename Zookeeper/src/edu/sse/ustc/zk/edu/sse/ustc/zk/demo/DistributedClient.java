@@ -5,6 +5,7 @@ import org.apache.zookeeper.WatchedEvent;
 import org.apache.zookeeper.Watcher;
 import org.apache.zookeeper.ZooKeeper;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -21,11 +22,17 @@ public class DistributedClient {
 	/**
 	 * 创建客户端连接
 	 */
-	public void getConnection(){
+	public void getConnection() throws IOException {
 		zk = new ZooKeeper(connectString, sessionTimeout, new Watcher() {
 			@Override
 			public void process(WatchedEvent event) {
-				getServerLists();
+				try {
+					getServerLists();
+				} catch (KeeperException e) {
+					e.printStackTrace();
+				} catch (InterruptedException e) {
+					e.printStackTrace();
+				}
 			}
 		});
 	}
