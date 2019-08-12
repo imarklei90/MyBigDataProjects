@@ -1,4 +1,4 @@
-package edu.sse.ustc.elasticsearch.redis;
+package edu.sse.ustc.redis.replication;
 
 import redis.clients.jedis.Jedis;
 
