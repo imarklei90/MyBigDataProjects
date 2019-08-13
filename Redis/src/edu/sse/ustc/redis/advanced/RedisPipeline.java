@@ -38,7 +38,7 @@ public class RedisPipeline {
 
 		// 获取所有的Response
 		pipelined.sync();
-
+	
 		long end_pipeline = System.currentTimeMillis();
 		System.out.println("Pipe Time Cost: " + (end_pipeline - start_pipeline));
 
