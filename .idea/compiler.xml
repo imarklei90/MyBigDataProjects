@@ -6,23 +6,25 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="HBase" />
+        <module name="Scala" />
         <module name="HelloWorld" />
         <module name="Flume" />
-        <module name="Scala" />
         <module name="Flink" />
+        <module name="HBase" />
+        <module name="Spark" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="AkkaSystem" target="1.8" />
       <module name="Elasticsearch" target="1.7" />
-      <module name="Flink" target="1.8" />
+      <module name="Flink" target="1.7" />
       <module name="Flume" target="1.7" />
       <module name="HBase" target="1.7" />
       <module name="HelloWorld" target="1.8" />
       <module name="Practice" target="1.8" />
       <module name="scala" target="1.8" />
       <module name="Scala" target="1.7" />
+      <module name="Spark" target="1.7" />
     </bytecodeTargetLevel>
   </component>
 </project>

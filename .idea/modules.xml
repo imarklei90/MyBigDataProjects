@@ -7,12 +7,12 @@
       <module fileurl="file://$PROJECT_DIR$/Flume/Flume.iml" filepath="$PROJECT_DIR$/Flume/Flume.iml" />
       <module fileurl="file://$PROJECT_DIR$/HBase/HBase.iml" filepath="$PROJECT_DIR$/HBase/HBase.iml" />
       <module fileurl="file://$PROJECT_DIR$/Hadoop/Hadoop.iml" filepath="$PROJECT_DIR$/Hadoop/Hadoop.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../SparkProjects/scala/HelloWorld/HelloWorld.iml" filepath="$PROJECT_DIR$/../SparkProjects/scala/HelloWorld/HelloWorld.iml" />
       <module fileurl="file://$PROJECT_DIR$/Hive/Hive.iml" filepath="$PROJECT_DIR$/Hive/Hive.iml" />
       <module fileurl="file://$PROJECT_DIR$/Kafka/Kafka.iml" filepath="$PROJECT_DIR$/Kafka/Kafka.iml" />
       <module fileurl="file://$PROJECT_DIR$/MongoDB/MongoDB.iml" filepath="$PROJECT_DIR$/MongoDB/MongoDB.iml" />
       <module fileurl="file://$PROJECT_DIR$/Redis/Redis.iml" filepath="$PROJECT_DIR$/Redis/Redis.iml" />
       <module fileurl="file://$PROJECT_DIR$/Scala/Scala.iml" filepath="$PROJECT_DIR$/Scala/Scala.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spark/Spark.iml" filepath="$PROJECT_DIR$/Spark/Spark.iml" />
       <module fileurl="file://$PROJECT_DIR$/Storm/Storm.iml" filepath="$PROJECT_DIR$/Storm/Storm.iml" />
       <module fileurl="file://$PROJECT_DIR$/Zookeeper/Zookeeper.iml" filepath="$PROJECT_DIR$/Zookeeper/Zookeeper.iml" />
     </modules>
