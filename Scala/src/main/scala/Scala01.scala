@@ -18,7 +18,7 @@ object Scala01 {
       *   2. printf
       *   3. $引用字符串
       */
-    println(s"$age, $salary, $isPass")
+    println(s"$age, $salary%.2f, $isPass")
 
     /**
       * 数据类型：

@@ -7,8 +7,8 @@
         <option value="$PROJECT_DIR$/Elasticsearch/pom.xml" />
         <option value="$PROJECT_DIR$/../SparkProjects/scala/pom.xml" />
         <option value="$PROJECT_DIR$/Flume/pom.xml" />
-        <option value="$PROJECT_DIR$/Spark/pom.xml" />
         <option value="$PROJECT_DIR$/Flink/pom.xml" />
+        <option value="$PROJECT_DIR$/Spark/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
