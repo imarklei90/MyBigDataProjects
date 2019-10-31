@@ -28,6 +28,8 @@ object SparkSQL_UsingReflection {
         .map(attr => Person2(attr(0), attr(1).trim.toLong))
         .toDF
 
+    peopleDF.filter(peopleDF.col("age") > 20).show()
+
     peopleDF.createOrReplaceTempView("people")
 
     val teenagersDF = spark.sql("select name,age from people where age between 13 and 19")
