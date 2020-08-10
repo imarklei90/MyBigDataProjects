@@ -15,7 +15,7 @@ object DataStreamApp {
 
     val environment = StreamExecutionEnvironment.getExecutionEnvironment
 
-    val dataStream = environment.socketTextStream("hadoop101",7777)
+    val dataStream = environment.socketTextStream("localhost",7777)
 
     val sumDataStream = dataStream.flatMap(_.split(" ")).filter(_.nonEmpty).map((_,1)).keyBy(0).sum(1)
 

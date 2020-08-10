@@ -15,7 +15,7 @@ object DataSetApp {
     // env
     val environment = ExecutionEnvironment.getExecutionEnvironment
 
-    val filePath = System.getProperty("user.dir")  + File.separator + "Flink" + File.separator + "data" + File.separator + "input.txt"
+    val filePath = System.getProperty("user.dir") + File.separator + "data" + File.separator + "input.txt"
 
     // source
     val dataSet = environment.readTextFile(filePath)
@@ -24,10 +24,10 @@ object DataSetApp {
     val sumDataSet = dataSet.flatMap(_.split(" ")).map((_,1)).groupBy(0).sum(1)
 
     // sink
-    //sumDataSet.print()
+    sumDataSet.print()
 
     // 输出
-    sumDataSet.writeAsCsv("").setParallelism(1)
+    //sumDataSet.writeAsCsv("").setParallelism(1)
 
   }
 
