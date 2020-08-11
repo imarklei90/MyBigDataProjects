@@ -19,7 +19,7 @@ object FraudDetectionJob {
     val env: StreamExecutionEnvironment = StreamExecutionEnvironment.getExecutionEnvironment
 
     // 创建数据源：从外部系统（如：Kafka、Rabbit MQ等接收数据，然后将数据发送到Flink中）
-    val transcations: DataStream[Transaction] = env
+    val transcations: DataStream[Transaction] = env.
       .addSource(new TransactionSource)
       .name("transactions") // 绑定name是为了方便调试，在发生异常时能够快速定位问题
 

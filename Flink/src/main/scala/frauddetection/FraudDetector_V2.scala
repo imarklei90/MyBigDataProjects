@@ -14,10 +14,6 @@ import org.apache.flink.walkthrough.common.entity.{Alert, Transaction}
  * @since 2020.08.10
  *
  */
-object FraudDetector_V2 {
-
-}
-
 class FraudDetector_V2 extends KeyedProcessFunction[Long, Transaction, Alert]{
 
   @transient private var flagState: ValueState[java.lang.Boolean] = _
