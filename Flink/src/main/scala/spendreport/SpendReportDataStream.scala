@@ -16,7 +16,7 @@ object SpendReportDataStream {
 
   def main(args: Array[String]): Unit = {
 
-    // 获取批处理的执行环境
+    /*// 获取批处理的执行环境
     val env: StreamExecutionEnvironment = StreamExecutionEnvironment.getExecutionEnvironment
     env.setStreamTimeCharacteristic(TimeCharacteristic.EventTime)
     // 将 env 包装进BatchTableEnvironment中，能够使用所有的Table API
@@ -45,7 +45,7 @@ object SpendReportDataStream {
       .insertInto("spend_report")
 
     // 执行Job
-    env.execute("Spend Report")
+    env.execute("Spend Report")*/
 
   }
 }

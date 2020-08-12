@@ -15,7 +15,7 @@ object FraudDetectionJob {
   @throws[Exception]
   def main(args: Array[String]): Unit = {
 
-    // 设置 Flink 的执行环境：用于定义任务的属性、创建数据源、启动任务的执行
+   /* // 设置 Flink 的执行环境：用于定义任务的属性、创建数据源、启动任务的执行
     val env: StreamExecutionEnvironment = StreamExecutionEnvironment.getExecutionEnvironment
 
     // 创建数据源：从外部系统（如：Kafka、Rabbit MQ等接收数据，然后将数据发送到Flink中）
@@ -34,7 +34,7 @@ object FraudDetectionJob {
       .name("send-alerts")
 
     // 运行Job：Flink是懒加载的，并且只有在完全搭建好之后，才能够发布到集群上执行，
-    env.execute("Fraud  Detection") // 给任务传递一个任务名参数，就可以运行任务了
+    env.execute("Fraud  Detection") // 给任务传递一个任务名参数，就可以运行任务了*/
 
 
   }

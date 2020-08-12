@@ -14,9 +14,9 @@ object DataStreamApp {
   def main(args: Array[String]): Unit = {
 
     var host = "localhost"
-    var port = 0
+    var port = 7777
 
-    // 获取参数
+/*    // 获取参数
     host = try{
       ParameterTool.fromArgs(args).get(host)
     }catch {
@@ -33,7 +33,7 @@ object DataStreamApp {
         System.err.println("No port specified. Please run 'DataStreamApp --host <host> --port <port>'")
         return
       }
-    }
+    }*/
 
     // 获取流处理的执行环境
     val environment = StreamExecutionEnvironment.getExecutionEnvironment
@@ -44,7 +44,7 @@ object DataStreamApp {
     val sumDataStream = dataStream.flatMap(_.split(" ")).filter(_.nonEmpty).map((_,1)).keyBy(0).sum(1)
 
     // 结果输出
-    sumDataStream.print()
+    sumDataStream.print().setParallelism(1)
 
     // 执行Job
     environment.execute() // 使用默认的job名称执行任务
